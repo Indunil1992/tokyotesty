@@ -1,0 +1,118 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "2ecde657-3d76-4f35-bc42-4b19eb2f0ecf": {
+        "id": "2ecde657-3d76-4f35-bc42-4b19eb2f0ecf",
+        "parent": null,
+        "name": "tokyotesty",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "a5be4de4-2c45-4c9a-a515-0e14619b01ce"
+        ],
+        "isRemovable": false,
+        "filePath": "tokyotesty"
+      },
+      "a5be4de4-2c45-4c9a-a515-0e14619b01ce": {
+        "id": "a5be4de4-2c45-4c9a-a515-0e14619b01ce",
+        "parent": "2ecde657-3d76-4f35-bc42-4b19eb2f0ecf",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "tokyotesty/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapNortheast1indunilcaltestany",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "77e0ddc0-8c68-4ec3-9b32-84b8d7e6abbe": {
+            "id": "77e0ddc0-8c68-4ec3-9b32-84b8d7e6abbe",
+            "name": "Test event",
+            "functionId": "a5be4de4-2c45-4c9a-a515-0e14619b01ce",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "2ecde657-3d76-4f35-bc42-4b19eb2f0ecf",
+    "openFiles": [
+      "a5be4de4-2c45-4c9a-a515-0e14619b01ce"
+    ],
+    "currentFileId": "a5be4de4-2c45-4c9a-a515-0e14619b01ce",
+    "resources": {
+      "apigapNortheast1indunilcaltestany": {
+        "name": "apigapNortheast1indunilcaltestany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-northeast-1",
+          "apiMode": 1,
+          "apiName": "indunilcal",
+          "apiId": "t91varlpme",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "u5blxla5u7",
+          "existingResources": {
+            "/test": "393t0o",
+            "/test/indu": "3lx4q3",
+            "/": "u5blxla5u7"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/test",
+          "resourceName": "test",
+          "resourceId": "393t0o",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "f2javm",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "tokyotesty",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-northeast-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1579680834057
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "tokyotesty",
+      "url": "https://github.com/Indunil1992/tokyotesty"
+    }
+  }
+}
